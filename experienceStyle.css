@@ -1,0 +1,114 @@
+@font-face{
+	font-family: principalTipo;
+	src: url(Gameplay.ttf);
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: principalTipo;
+    color: white;
+}
+
+body{
+	background: linear-gradient(45deg, black, rgb(59, 59, 59));
+	background-size: 400% 400%;
+	animation: cambiar 5s ease-in-out infinite;
+}
+
+@keyframes cambiar{
+			0%{background-position: 0 50%;}
+			50%{background-position: 100% 50%;}
+			100%{background-position: 0 50%;}
+}
+
+header{
+    width: 100%;
+    height: 70px;  
+
+}
+
+.links-buttons{
+	text-decoration: none;
+	line-height: 70px;
+	cursor: pointer;
+	padding: 10px 20px;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	position: relative;
+	border-radius: 5px;
+}
+
+.links-buttons::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, rgb(31, 229, 0), darkgreen, limegreen, darkgreen, rgb(31, 229, 0), limegreen);
+	background-size: 800%;
+	border-radius: 5px;
+	filter: blur(8px);
+	animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+	0%{
+		background-position: 0,0;
+	}
+
+	50%{
+		background-position: 400%,0;
+	}
+
+	100%{
+		background-position: 0,0;
+	}
+}
+
+nav ul{
+    text-align: center;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+nav li{
+	margin: 5px;
+    display: inline;
+}
+
+
+#experience-content{
+	display: grid;
+	place-items: center;
+}
+
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 95%;
+	height: 50vh;
+}
+
+h1{
+	margin: auto;
+	text-align: center;
+	font-size: 15px;
+}
+
+h2{
+	text-align: center;
+	font-size: 15px;
+}
+
+p {
+
+	margin: auto;
+	font-size: 10px;
+	text-align: justify;
+}

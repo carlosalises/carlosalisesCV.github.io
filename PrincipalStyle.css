@@ -1,0 +1,262 @@
+
+@font-face{
+
+	font-family: principalTipo;
+	src: url(Gameplay.ttf);
+}
+
+@font-face{
+	font-family: titlesTipo;
+	src: url(GameCube.ttf);
+}
+
+
+.titles {
+	font-size: 20px;
+	font-family: titlesTipo;
+	text-align: center;
+	color: rgb(0, 233, 0);
+	margin-bottom: 20px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: principalTipo;
+    color: white;
+}
+
+body{
+	background: linear-gradient(45deg, black, rgb(59, 59, 59));
+	background-size: 400% 400%;
+	animation: cambiar 5s ease-in-out infinite;
+}
+
+@keyframes cambiar{
+			0%{background-position: 0 50%;}
+			50%{background-position: 100% 50%;}
+			100%{background-position: 0 50%;}
+}
+
+header{
+    width: 100%;
+    height: 70px;  
+
+}
+
+img {
+	filter: blur(.5px);
+}
+
+.links-buttons{
+	text-decoration: none;
+	line-height: 70px;
+	cursor: pointer;
+	padding: 10px 20px;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	position: relative;
+	border-radius: 5px;
+}
+
+.links-buttons::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, rgb(31, 229, 0), darkgreen, limegreen, darkgreen, rgb(31, 229, 0), limegreen);
+	background-size: 800%;
+	border-radius: 5px;
+	filter: blur(8px);
+	animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+	0%{
+		background-position: 0,0;
+	}
+
+	50%{
+		background-position: 400%,0;
+	}
+
+	100%{
+		background-position: 0,0;
+	}
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+nav li{
+	margin: 5px;
+    display: inline;
+}
+
+
+#principal-div{
+	display: grid;
+	place-items: center;
+}
+
+#my-information{
+	margin: 50px;
+	border-bottom: 1px solid white;
+	display: flex;
+	justify-content: center;
+}
+
+#my-information > div {
+	margin: 50px;
+}
+
+
+p{
+	padding: 10px;
+	font-size: 10px;
+	text-align: center;
+}
+
+#links-interes{
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#links-interes > a {
+	margin: auto;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+#links-interes > a:hover {
+	transform: scale(1.1);
+}
+
+
+#person-image{
+	width: 200px;
+	border: 2px solid rgb(31, 229, 0);
+	box-shadow: 0px 0px 20px rgb(31, 229, 0);
+	border-radius: 5px;
+}
+
+.interes-images {
+	width: 30px;
+}
+
+.name{
+	font-family: titlesTipo;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.developer{
+	font-family: titlesTipo;
+	font-size: 20px;
+	color: white;
+	padding: 10px;
+	white-space: nowrap;
+	animation: typing 3s steps(16);
+}
+
+
+@keyframes typing {
+	from  {
+		clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+	}
+	to{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
+
+/*EXPERIENCE PAGE CSS*/
+
+#experience-content{
+	margin-top: 70px;
+	border-bottom: 1px solid white;
+}
+
+#experience-content section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 95%;
+	height: 30vh;
+}
+
+#experience-content  section  h1 {
+	margin: auto;
+	text-align: center;
+	font-size: 15px;
+}
+
+#experience-content  section  h2 {
+	text-align: center;
+	font-size: 10px;
+}
+
+#experience-content  section  p {
+	margin: auto;
+	font-size: 10px;
+	text-align: justify;
+}
+
+
+/*FORMATION PAGE CSS*/
+
+#formation-article {
+	margin: 50px;
+	width: auto;
+}
+
+#formation-sections{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.formation-titles{
+	text-align: center;
+}
+
+#formation-article section{
+	padding: 10px;
+	flex-basis: 200;
+	margin: 100px;
+	width: 500px;
+	height: auto;
+}
+
+/*RESPONSIVE PAGE*/
+
+@media only screen and (max-width: 900px){
+	#experience-content section {
+		margin-top: 30px;
+		display: block;
+	}
+
+	#experience-content  section  p {
+		margin-top: 20px;
+		font-size: 10px;
+		text-align: center;
+	}
+
+	#my-information {
+		display: block;
+	}
+
+	#information{
+		margin-bottom: 10px;
+	}
+} 
