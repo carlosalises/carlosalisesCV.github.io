@@ -12,7 +12,7 @@
 
 
 .titles {
-	font-size: 20px;
+	font-size: 15px;
 	font-family: titlesTipo;
 	text-align: center;
 	color: rgb(0, 233, 0);
@@ -119,6 +119,10 @@ nav li{
 }
 
 
+.information > p {
+	font-size: 11px;
+}
+
 p{
 	padding: 10px;
 	font-size: 10px;
@@ -158,6 +162,7 @@ p{
 	font-family: titlesTipo;
 	font-size: 20px;
 	padding: 10px;
+	margin-bottom: 25px;
 }
 
 .developer{
@@ -182,7 +187,7 @@ p{
 /*EXPERIENCE PAGE CSS*/
 
 #experience-content{
-	margin-top: 70px;
+	margin: 50px;
 	border-bottom: 1px solid white;
 }
 
@@ -241,6 +246,7 @@ p{
 /*RESPONSIVE PAGE*/
 
 @media only screen and (max-width: 900px){
+
 	#experience-content section {
 		margin-top: 30px;
 		display: block;
