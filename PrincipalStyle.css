@@ -7,13 +7,12 @@
 
 @font-face{
 	font-family: titlesTipo;
-	src: url(GameCube.ttf);
+	src: url(fFinish.ttf);
 }
 
 
 .titles-articles {
-	font-size: 15px;
-	font-family: titlesTipo;
+	font-size: 25px;
 	text-align: center;
 	color: rgb(0, 233, 0);
 	margin-bottom: 20px;
@@ -23,10 +22,11 @@
 	text-align: center;
 }
 
+
 *{
+	font-family: titlesTipo;
     margin: 0px;
     padding: 0px;
-    font-family: principalTipo;
     color: white;
 }
 
@@ -46,13 +46,16 @@ body{
 #general {
 	display: block; 
 	place-items: center; 
-	margin-top: 50px;
+	margin-top: 100px;
 }
 
 header{
+	border-bottom: 2px solid white;
+	background-color: rgb(93, 93, 93);
+	top: 0;
+	position: fixed; 
     width: 100%;
-    height: 70px;  
-
+    height: 70px; 
 }
 
 img {
@@ -60,55 +63,20 @@ img {
 }
 
 .links-buttons{
+	color: white;
 	text-decoration: none;
 	line-height: 70px;
-	cursor: pointer;
 	padding: 10px 20px;
-	color: white;
-	font-size: 10px;
+	font-size: 15px;
 	font-weight: bold;
-	position: relative;
-	border-radius: 5px;
 }
 
-.links-buttons::before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(45deg, rgb(31, 229, 0), darkgreen, limegreen, darkgreen, rgb(31, 229, 0), limegreen);
-	background-size: 800%;
-	border-radius: 5px;
-	filter: blur(8px);
-	animation: glowing 20s linear infinite;
-}
-
-@keyframes glowing {
-	0%{
-		background-position: 0,0;
-	}
-
-	50%{
-		background-position: 400%,0;
-	}
-
-	100%{
-		background-position: 0,0;
-	}
-}
 
 nav ul{
-    list-style: none;
     text-align: center;
-    vertical-align: top;
-    margin: 0 10px;
 }
 
 nav li{
-	margin: 5px;
     display: inline;
 }
 
@@ -133,7 +101,7 @@ nav li{
 
 p{
 	margin: 10px;
-	font-size: 11px;
+	font-size: 13px;
 	text-align: center;
 }
 
@@ -156,6 +124,7 @@ p{
 
 
 #person-image{
+	z-index: -1;
 	width: 200px;
 	border: 2px solid rgb(31, 229, 0);
 	box-shadow: 0px 0px 20px rgb(31, 229, 0);
@@ -167,15 +136,13 @@ p{
 }
 
 #name{
-	font-family: titlesTipo;
-	font-size: 20px;
+	font-size: 30px;
 	padding: 10px;
 	margin-bottom: 25px;
 }
 
 #developer{
-	font-family: titlesTipo;
-	font-size: 20px;
+	font-size: 30px;
 	color: white;
 	padding: 10px;
 	white-space: nowrap;
@@ -222,7 +189,6 @@ p{
 
 #experience-content  section  p {
 	margin: auto;
-	font-size: 10px;
 	text-align: justify;
 }
 
@@ -232,6 +198,7 @@ p{
 #formation-article {
 	margin: 50px;
 	width: auto;
+	border-bottom: 1px solid white;
 }
 
 #formation-sections{
@@ -242,10 +209,19 @@ p{
 }
 
 
-#formation-article section{
-	padding: 10px;
-	margin: 100px;
+#formation-sections section{
+	border: 2px solid white;
+	background-color: rgb(93, 93, 93);
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 50px;
+	margin: 50px;
 	width: auto;
+}
+
+#formation-sections section:hover{
+	transform: translateY(-3%);
 }
 
 /*RESPONSIVE PAGE*/
