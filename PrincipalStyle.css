@@ -11,12 +11,16 @@
 }
 
 
-.titles {
+.titles-articles {
 	font-size: 15px;
 	font-family: titlesTipo;
 	text-align: center;
 	color: rgb(0, 233, 0);
 	margin-bottom: 20px;
+}
+
+.normal-title {
+	text-align: center;
 }
 
 *{
@@ -119,13 +123,9 @@ nav li{
 }
 
 
-.information > p {
-	font-size: 11px;
-}
-
 p{
-	padding: 10px;
-	font-size: 10px;
+	margin: 10px;
+	font-size: 11px;
 	text-align: center;
 }
 
@@ -139,7 +139,7 @@ p{
 #links-interes > a {
 	margin: auto;
 	text-decoration: none;
-	font-size: 8px;
+	font-size: 100px;
 }
 
 #links-interes > a:hover {
@@ -199,16 +199,13 @@ p{
 	height: 30vh;
 }
 
-#experience-content  section  h1 {
+#experience-content  section  h1, h2 {
 	margin: auto;
 	text-align: center;
 	font-size: 15px;
 }
 
-#experience-content  section  h2 {
-	text-align: center;
-	font-size: 10px;
-}
+
 
 #experience-content  section  p {
 	margin: auto;
@@ -231,9 +228,6 @@ p{
 	align-items: center;
 }
 
-.formation-titles{
-	text-align: center;
-}
 
 #formation-article section{
 	padding: 10px;
@@ -250,6 +244,10 @@ p{
 	#experience-content section {
 		margin-top: 30px;
 		display: block;
+	}
+
+	#experience-content section h1, h2{
+		margin-top: 20px;
 	}
 
 	#experience-content  section  p {
