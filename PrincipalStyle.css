@@ -116,6 +116,7 @@ nav li{
 	border-bottom: 1px solid white;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 #my-information > div {
@@ -158,14 +159,14 @@ p{
 	width: 30px;
 }
 
-.name{
+#name{
 	font-family: titlesTipo;
 	font-size: 20px;
 	padding: 10px;
 	margin-bottom: 25px;
 }
 
-.developer{
+#developer{
 	font-family: titlesTipo;
 	font-size: 20px;
 	color: white;
@@ -196,7 +197,7 @@ p{
 	justify-content: center;
 	align-items: center;
 	width: 95%;
-	height: 30vh;
+	height: 20em;
 }
 
 #experience-content  section  h1, h2 {
@@ -231,10 +232,8 @@ p{
 
 #formation-article section{
 	padding: 10px;
-	flex-basis: 200;
 	margin: 100px;
-	width: 500px;
-	height: auto;
+	width: auto;
 }
 
 /*RESPONSIVE PAGE*/
@@ -263,4 +262,21 @@ p{
 	#information{
 		margin-bottom: 10px;
 	}
+} 
+
+@media only screen and (max-width: 500px){
+
+	#name{
+		font-size: 15px;
+	} 
+
+	#developer{
+		font-size: 15px;
+	}
+
+	#formation-article section{
+	padding: 10px;
+	margin: 50px;
+	width: auto;
+}
 } 
