@@ -235,6 +235,10 @@ p{
 		display: block;
 	}
 
+	#description{
+		font-size: 9px;
+	}
+
 	#my-info {
 		display: grid;
 		place-items: center;
@@ -272,7 +276,7 @@ p{
 
 
 	#description{
-		font-size: 7px;
+		font-size: 9px;
 	}
 
 
