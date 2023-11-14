@@ -235,9 +235,6 @@ p{
 		display: block;
 	}
 
-	#description{
-		font-size: 9px;
-	}
 
 	#my-info {
 		display: grid;
@@ -273,6 +270,10 @@ p{
 	#links-interes{
 		margin-bottom: 49px;
 	} 
+
+	#description{
+		font-size: 9px;
+	}
 
 	#name{
 		font-size: 15px;
@@ -311,7 +312,7 @@ p{
 } 
 
 
-@media only screen and (min-width: 300px){
+@media only screen and (max-width: 450px){
 
 	#description{
 		font-size: 6px;
