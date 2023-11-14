@@ -228,7 +228,7 @@ p{
 
 /*RESPONSIVE PAGE*/
 
-@media only screen and (max-width: 900px){
+@media screen and (max-width: 900px){
 
 	#general {
 		margin-top: 50px;
@@ -268,17 +268,11 @@ p{
 	}
 } 
 
-@media only screen and (max-width: 500px){
+@media screen and (max-width: 500px){
 
 	#links-interes{
 		margin-bottom: 49px;
 	} 
-
-
-	#description{
-		font-size: 5px;
-	}
-
 
 	#name{
 		font-size: 15px;
@@ -312,6 +306,15 @@ p{
 
 	a{
 		font-size: 5px;
+	} 
+
+} 
+
+
+@media only screen and (min-width: 300px){
+
+	#description{
+		font-size: 6px;
 	} 
 
 } 
