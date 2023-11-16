@@ -111,7 +111,6 @@ nav li{
 
 
 #person-image{
-	z-index: -1;
 	width: 200px;
 	border: 2px solid rgb(31, 229, 0);
 	box-shadow: 0px 0px 20px rgb(31, 229, 0);
@@ -225,6 +224,29 @@ p{
 #formation-sections section:hover{
 	transform: scale3d(1.2, 1.2, 1.0);
 }
+
+
+/*PORTFOLIO PAGE CSS*/
+
+#contenedor {
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+
+.proyectos {
+	width: 10%;
+	height: 10em;
+	border: 1px solid white;
+	padding: 30px;
+}
+
+
+
+
 
 /*RESPONSIVE PAGE*/
 
