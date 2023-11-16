@@ -284,6 +284,16 @@ p{
 	#information{
 		margin-bottom: 10px;
 	}
+
+	#contenedor {
+		display: grid;
+		place-items: center;
+	}
+
+	.proyectos {
+		margin: 30px;
+	}
+
 } 
 
 @media screen and (max-width: 500px){
@@ -333,16 +343,6 @@ p{
 	a{
 		font-size: 5px;
 	} 
-
-	#contenedor {
-		display: grid;
-		place-items: center;
-	}
-
-	.proyectos {
-		margin-top: 30px;
-	}
-
 
 } 
 
