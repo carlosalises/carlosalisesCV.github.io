@@ -2,19 +2,19 @@
 @font-face{
 
 	font-family: principalTipo;
-	src: url(Gameplay.ttf);
+	src: url(fuentes/Gameplay.ttf);
 }
 
 @font-face{
 	font-family: titlesTipo;
-	src: url(fFinish.ttf);
+	src: url(fuentes/fFinish.ttf);
 }
 
 
 .titles-articles {
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
-	color: rgb(0, 233, 0);
+	color: white;
 	margin-bottom: 20px;
 }
 
@@ -31,6 +31,7 @@
 }
 
 body{
+	z-index: 1;
 	background: linear-gradient(45deg, black, rgb(59, 59, 59));
 	background-size: 400% 400%;
 	animation: cambiar 5s ease-in-out infinite;
@@ -43,18 +44,12 @@ body{
 }
 
 
-#general {
-	width: auto;
-	display: grid;
-	place-items: center;
-	height: 550px;
-}
-
 #text {
 	margin: 20px;
 }
 
 #my-info {
+	margin-top: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -64,7 +59,6 @@ header{
 	border-bottom: 2px solid white;
 	background-color: rgb(93, 93, 93);
 	top: 0;
-	position: fixed; 
     width: 100%;
     height: 70px; 
 }
@@ -93,13 +87,16 @@ nav li{
 
 
 #links-interes{
-	margin-top: 150px;
+	margin-top: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 #links-interes > a {
+	background-color: rgb(93, 93, 93);
+	padding: 10px;
+	border: 2px solid white;
 	margin: auto;
 	text-decoration: none;
 	font-size: 10px;
@@ -140,6 +137,7 @@ nav li{
 }
 
 #description{
+	color: rgb(31, 229, 0);
 	white-space: nowrap;
 	animation: typing 3s steps(111);
 }
@@ -178,17 +176,43 @@ p{
 
 /*EXPERIENCE PAGE CSS*/
 
+.responsabilities-list {
+	list-style: none;
+}
+
+
+.responsabilities-list li{
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#curriculum-download{
+	background-color: rgb(93, 93, 93);
+	padding: 10px;
+	border: 2px solid white;
+	margin-top: 50px;
+}
+
+#curriculum-download:hover{
+	transform: scale(1.05);
+}
+
 #experience-content{
-	margin: 50px;
-	border-bottom: 1px solid white;
+	display: grid;
+	place-items: center;
+	margin-top: 100px;
 }
 
 #experience-content section {
+	background-color: rgb(93, 93, 93);
+	padding: 30px;
+	margin: 40px;
+	border: 3px solid white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 95%;
-	height: 20em;
+	width: 70%;
+	height: 150px;
 }
 
 #experience-content  section  h1, h2 {
@@ -210,7 +234,6 @@ p{
 #formation-article {
 	margin: 50px;
 	width: auto;
-	border-bottom: 1px solid white;
 }
 
 #formation-sections{
@@ -221,8 +244,9 @@ p{
 	align-items: center;
 }
 
-#formation-sections section:hover{
-	transform: scale3d(1.2, 1.2, 1.0);
+
+#formation-sections section{
+	padding: 20px;
 }
 
 
@@ -238,10 +262,12 @@ p{
 
 
 .proyectos {
-	width: 200px;
-	height: 200px;
+	display: grid;
+	place-items: center;
+	width: auto;
+	height: auto;
 	border: 1px solid white;
-	padding: 30px;
+	padding: 20px;
 }
 
 
@@ -263,7 +289,8 @@ p{
 	}
 
 	#experience-content section {
-		margin-top: 30px;
+		height: auto;
+		margin: auto 0px 30px 0px;
 		display: block;
 	}
 
@@ -271,10 +298,14 @@ p{
 		margin-top: 20px;
 	}
 
-	#experience-content  section  p {
-		margin-top: 20px;
+	#experience-content  section  ul {
+		margin-top: 50px;
 		font-size: 10px;
 		text-align: center;
+	}
+
+	#experience-content  section  ul li {
+		margin: 10px;
 	}
 
 	#my-information {
