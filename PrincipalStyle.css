@@ -270,7 +270,11 @@ p{
 	padding: 20px;
 }
 
-
+.proyectos-contenedor{
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+}
 
 
 /*RESPONSIVE PAGE*/
@@ -313,6 +317,11 @@ p{
 	}
 
 	#contenedor {
+		display: grid;
+		place-items: center;
+	}
+
+	.proyectos-contenedor{
 		display: grid;
 		place-items: center;
 	}
@@ -370,7 +379,6 @@ p{
 	a{
 		font-size: 5px;
 	} 
-
 } 
 
 
